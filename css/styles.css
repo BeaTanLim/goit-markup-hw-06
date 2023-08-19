@@ -559,18 +559,29 @@ alpha = opacity*/
   display: flex;
 }
 
-.footer-subscribe .form-input{
+.footer-subscribe .footer-form-input{
   background-color: transparent;
   color: var(--cloud);
   border: 1px solid var(--white);
   padding-left: 10px;
   width: 264px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-size: 14px;
 }
 
-.footer-subscribe .form-input::placeholder{
+
+.footer-subscribe .footer-form-input::placeholder{
   color: var(--white);
 }
+
+.footer-form-input:hover,
+.footer-form-input:focus,
+.footer-form-text-area:hover,
+.footer-form-text-area:focus{
+  outline: none;
+}
+
 
 .button.subscribe{
   color: white;
@@ -826,6 +837,7 @@ The adjacent sibling selector is used to select an element that is directly afte
   border-radius: 4px;
   border: 1px solid var(--navyblue-modal, rgba(46, 47, 66, 0.40));
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  font-size: 14px;
 }
 
 .form-text-area{
@@ -879,6 +891,7 @@ The adjacent sibling selector is used to select an element that is directly afte
 
 .form-text-area{
   padding-left: 16px;
+  padding-top: 8px;
   resize: none;
   height: 120px;
 }
